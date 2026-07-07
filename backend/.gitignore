@@ -1,0 +1,29 @@
+### IntelliJ ###
+.idea/
+*.iml
+
+### VS Code ###
+.vscode/
+
+### Maven ###
+target/
+
+### Logs ###
+*.log
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Environment ###
+.env
+
+### Spring ###
+application-local.yml
+
+### Node ###
+node_modules/
+
+### Python ###
+__pycache__/
+*.pyc

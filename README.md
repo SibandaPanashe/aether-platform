@@ -46,10 +46,11 @@ Infrastructure
 ## Team
 
 - Panashe Sibanda — Backend
-- Sakhe — Backend
-- Gashy — Frontend
-- Chawaz — Frontend
-- Mena — DevOps
+- Sakhengomusa Ndlovu — Backend
+-  Mena Alice — DevOps
+- Gashirai Mlambo — Frontend
+- Tadiwa Chawatama — Frontend
+
 
 ## Status
 

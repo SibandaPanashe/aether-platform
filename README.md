@@ -66,98 +66,50 @@ The platform combines computer vision, optical character recognition (OCR), biom
 
 ## Features
 
-### Phase 1 — Foundation (Implemented)
-- ✅ JWT Authentication (register, login, refresh, logout)
-- ✅ Organization Management (CRUD, RBAC)
-- ✅ Citizen Profile Management
-- ✅ Document Upload & Storage
-- ✅ Role-Based Access Control (SUPER_ADMIN, ORGANIZATION_ADMIN, VERIFIER, CITIZEN)
+- AI-powered OCR
+- Face Verification
+- Passive Liveness Detection
+- Fraud Detection
+- Digital Attestations
+- Multi-Tenant Organization Management
+- REST APIs
+- JWT Authentication
+- Audit Logs
 
-### Phase 2 — AI Verification (In Progress)
-- 🔄 Document Detection (YOLOv11)
-- 🔄 OCR & MRZ Extraction (PaddleOCR + PassportEye)
-- 🔄 Face Matching (InsightFace ArcFace)
-- 🔄 Passive Liveness Detection (MiniFASNet)
-- 🔄 Trust Score Engine
+## Technology Stack
 
-### Phase 3 — Credentials (Planned)
-- ⬜ Digital Attestation (JWT signed with Ed25519)
-- ⬜ Credential Verification API
-- ⬜ QR Code Verification
-- ⬜ Credential Revocation
+Backend
+- Java 17
+- Spring Boot 3
+- Spring Security
+- Spring Data JPA
+- PostgreSQL
+- Flyway
 
----
+AI
+- Python
+- FastAPI
+- YOLO
+- OpenCV
+- Tesseract OCR
 
-## Tech Stack
+Frontend
+- React
+- TypeScript
 
-| Layer         | Technology                                             |
-|---------------|---------------------------------------------------------|
-| **Backend**   | Java 21, Spring Boot 3.5, Spring Security, JPA, Flyway  |
-| **AI Engine** | Python 3.12, FastAPI, OpenCV, InsightFace, PaddleOCR    |
-| **Frontend**  | React 18, TypeScript, Vite                              |
-| **Database**  | PostgreSQL 16                                            |
-| **Cache**     | Redis                                                    |
-| **Storage**   | MinIO (S3-compatible)                                    |
-| **Gateway**   | Janus API Gateway (Spring Cloud)                         |
-| **Infra**     | Docker, Docker Compose, GitHub Actions                   |
+Infrastructure
+- Docker
+- GitHub Actions
 
----
+## Team
 
-## Quick Start
+- Panashe Sibanda — Backend
+- Sakhengomusa Ndlovu — Backend
+-  Mena Alice — DevOps
+- Gashirai Mlambo — Frontend
+- Tadiwa Chawatama — Frontend
 
-### Prerequisites
-- Java 21
-- Docker & Docker Compose
-- PostgreSQL 16 (or use Docker)
-- Python 3.12 (for AI service)
 
-### 1. Clone
+## Status
 
-```bash
-git clone https://github.com/SibandaPanashe/aether-platform.git
-cd aether-platform
-```
-
-### 2. Configure environment
-
-Copy the example environment file and fill in your local values (database credentials, JWT secret, MinIO keys, etc.):
-
-```bash
-cp .env.example .env
-```
-
-### 3. Start dependencies with Docker Compose
-
-```bash
-docker compose up -d
-```
-
-This spins up PostgreSQL, Redis, and MinIO for local development.
-
-### 4. Run the backend services
-
-```bash
-./mvnw spring-boot:run
-```
-
-### 5. Run the AI verification engine
-
-```bash
-cd ai-engine
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-### 6. Run the frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
----
-
-## License
-
-Licensed under the Apache 2.0 License. See [LICENSE](LICENSE) for details.
+🚧 Active Development

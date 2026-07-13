@@ -1,17 +1,19 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:aether_test
+    url: jdbc:h2:mem:aether_test;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
     driver-class-name: org.h2.Driver
     username: sa
     password:
-
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create-drop
-
   flyway:
     enabled: false
 
-logging:
-  level:
-    org.springframework: WARN
+app:
+  jwt:
+    secret: dGVzdC1zZWNyZXQta2V5LWZvci1jaS1hbmQtbG9jYWwtdGVzdGluZy1wdXJwb3Nlcy1vbmx5LW5vdC1mb3ItcHJvZHVjdGlvbg==
+    access-token-expiration-ms: 900000
+    refresh-token-expiration-ms: 604800000
+    issuer: aether-test

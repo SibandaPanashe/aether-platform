@@ -44,9 +44,6 @@ services:
       FACE_MATCH_THRESHOLD: ${FACE_MATCH_THRESHOLD}
     ports:
       - "8000:8000"
-    volumes:
-      - ai_models:/root/.insightface
 
 volumes:
   postgres_data:
-  ai_models:

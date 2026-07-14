@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+    <defs>
+        <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" style="stop-color:#0A1628;stop-opacity:1" />
+            <stop offset="60%" style="stop-color:#061020;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#020812;stop-opacity:1" />
+        </radialGradient>
+        <linearGradient id="zimGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#D4A843;stop-opacity:0.35" />
+            <stop offset="100%" style="stop-color:#F5C842;stop-opacity:0.1" />
+        </linearGradient>
+        <radialGradient id="nodeGlow">
+            <stop offset="0%" style="stop-color:#D4A843;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#D4A843;stop-opacity:0" />
+        </radialGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <rect width="1200" height="800" fill="url(#bgGrad)" />
+    <rect width="1200" height="800" fill="url(#zimGold)" />
+    <g stroke="currentColor" fill="none" filter="url(#glow)" opacity="0.3">
+        <line x1="100" y1="200" x2="350" y2="150" style="stroke:#D4A843;stroke-width:0.8" />
+        <line x1="350" y1="150" x2="600" y2="280" style="stroke:#D4A843;stroke-width:0.6" />
+        <line x1="600" y1="280" x2="850" y2="180" style="stroke:#D4A843;stroke-width:0.7" />
+        <line x1="850" y1="180" x2="1100" y2="250" style="stroke:#D4A843;stroke-width:0.5" />
+        <line x1="200" y1="400" x2="450" y2="350" style="stroke:#319B4A;stroke-width:0.6" />
+        <line x1="450" y1="350" x2="700" y2="420" style="stroke:#D4A843;stroke-width:0.6" />
+        <line x1="700" y1="420" x2="950" y2="380" style="stroke:#319B4A;stroke-width:0.7" />
+        <line x1="950" y1="380" x2="1150" y2="450" style="stroke:#D4A843;stroke-width:0.5" />
+        <line x1="150" y1="600" x2="400" y2="550" style="stroke:#D4A843;stroke-width:0.6" />
+        <line x1="400" y1="550" x2="650" y2="620" style="stroke:#C62828;stroke-width:0.5" />
+        <line x1="650" y1="620" x2="900" y2="570" style="stroke:#D4A843;stroke-width:0.7" />
+        <line x1="900" y1="570" x2="1100" y2="630" style="stroke:#319B4A;stroke-width:0.5" />
+        <line x1="350" y1="150" x2="450" y2="350" style="stroke:#D4A843;stroke-width:0.5" />
+        <line x1="600" y1="280" x2="700" y2="420" style="stroke:#319B4A;stroke-width:0.5" />
+        <line x1="850" y1="180" x2="950" y2="380" style="stroke:#C62828;stroke-width:0.4" />
+        <line x1="200" y1="400" x2="150" y2="600" style="stroke:#D4A843;stroke-width:0.5" />
+        <line x1="450" y1="350" x2="400" y2="550" style="stroke:#D4A843;stroke-width:0.5" />
+        <line x1="700" y1="420" x2="650" y2="620" style="stroke:#D4A843;stroke-width:0.5" />
+        <line x1="950" y1="380" x2="900" y2="570" style="stroke:#319B4A;stroke-width:0.5" />
+    </g>
+    <g>
+        <circle cx="100" cy="200" r="3.5" fill="#D4A843" opacity="0.7" />
+        <circle cx="350" cy="150" r="4.5" fill="#D4A843" opacity="0.85" />
+        <circle cx="600" cy="280" r="3" fill="#D4A843" opacity="0.65" />
+        <circle cx="850" cy="180" r="4" fill="#D4A843" opacity="0.8" />
+        <circle cx="1100" cy="250" r="2.5" fill="#D4A843" opacity="0.5" />
+        <circle cx="450" cy="350" r="3.5" fill="#D4A843" opacity="0.75" />
+        <circle cx="700" cy="420" r="4" fill="#D4A843" opacity="0.85" />
+        <circle cx="950" cy="380" r="3" fill="#D4A843" opacity="0.7" />
+        <circle cx="400" cy="550" r="3.5" fill="#D4A843" opacity="0.75" />
+        <circle cx="900" cy="570" r="2.5" fill="#D4A843" opacity="0.6" />
+        <circle cx="150" cy="600" r="4" fill="#D4A843" opacity="0.8" />
+        <circle cx="1150" cy="450" r="2.5" fill="#D4A843" opacity="0.5" />
+        <circle cx="200" cy="400" r="3" fill="#319B4A" opacity="0.7" />
+        <circle cx="650" cy="620" r="3.5" fill="#319B4A" opacity="0.7" />
+        <circle cx="1100" cy="630" r="2.5" fill="#319B4A" opacity="0.55" />
+        <circle cx="1150" cy="350" r="2" fill="#C62828" opacity="0.4" />
+        <circle cx="250" cy="580" r="2.5" fill="#C62828" opacity="0.4" />
+        <circle cx="350" cy="150" r="10" fill="url(#nodeGlow)" opacity="0.3" />
+        <circle cx="700" cy="420" r="10" fill="url(#nodeGlow)" opacity="0.3" />
+        <circle cx="450" cy="350" r="8" fill="url(#nodeGlow)" opacity="0.25" />
+        <circle cx="400" cy="550" r="8" fill="url(#nodeGlow)" opacity="0.25" />
+    </g>
+</svg>

@@ -20,7 +20,6 @@ public class DocumentController {
     private final DocumentService documentService;
 
     @PostMapping("/citizen/{citizenId}/upload")
-    @PreAuthorize("hasAnyRole('ORGANIZATION_ADMIN', 'VERIFIER')")
     public ResponseEntity<ApiResponse<DocumentResponse>> upload(
             @PathVariable String citizenId,
             @RequestParam("file") MultipartFile file,
@@ -32,14 +31,12 @@ public class DocumentController {
     }
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasAnyRole('ORGANIZATION_ADMIN', 'VERIFIER', 'SUPER_ADMIN')")
     public ResponseEntity<ApiResponse<DocumentResponse>> getById(@PathVariable String id) {
         DocumentResponse doc = documentService.getById(id);
         return ResponseEntity.ok(ApiResponse.success(doc, "Document retrieved"));
     }
 
     @GetMapping("/citizen/{citizenId}")
-    @PreAuthorize("hasAnyRole('ORGANIZATION_ADMIN', 'VERIFIER', 'SUPER_ADMIN')")
     public ResponseEntity<ApiResponse<List<DocumentResponse>>> getByCitizenId(@PathVariable String citizenId) {
         List<DocumentResponse> docs = documentService.getByCitizenId(citizenId);
         return ResponseEntity.ok(ApiResponse.success(docs, "Documents retrieved"));

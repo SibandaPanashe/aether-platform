@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aetherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F6BFF"/>
+      <stop offset="55%" stop-color="#2EC5E8"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="aetherGradSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8FA6FF"/>
+      <stop offset="100%" stop-color="#7DEBFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left leg of the peak -->
+  <path d="M256 48 L104 464 L200 464 L256 300 L312 464 L408 464 Z" fill="url(#aetherGrad)"/>
+
+  <!-- Notch / crossbar cut as a lighter facet, echoing the proposal mark -->
+  <path d="M198 288 L314 288 L336 348 L176 348 Z" fill="url(#aetherGradSoft)"/>
+
+  <!-- Peak highlight facet -->
+  <path d="M256 48 L292 150 L220 150 Z" fill="#DFF7FF" opacity="0.85"/>
+</svg>
